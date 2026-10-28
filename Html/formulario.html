@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Alta</title>
+    <link rel="stylesheet" href="../Css/Global.css">
+</head>
+
+<body>
+
+    <div id="main-header"></div>
+
+
+<div class="formulario">
+    <h2>Formulario de Alta</h2>
+
+    <form>
+
+        <label>Nombre:</label>
+        <input type="text" required>
+
+        <label>Altura (cm):</label>
+        <input type="number" min="100" max="250" required>
+
+        <label>Peso (kg):</label>
+        <input type="number" min="30" max="200" required>
+
+        <label>Fecha de nacimiento:</label>
+        <input type="date" required>
+
+        <label>Fotografía:</label>
+        <input type="file" accept="image/*">
+
+        <label>Tipo:</label>
+        <select id="tipo">
+            <option value="jugador">Jugador</option>
+            <option value="entrenador">Entrenador</option>
+        </select>
+
+        <div id="posiciones">
+            <strong>Posición:</strong><br>
+            <input type="checkbox"> Defensa<br>
+            <input type="checkbox"> Delantero<br>
+            <input type="checkbox"> Centrocampista<br>
+            <input type="checkbox"> Portero
+        </div>
+
+        <label>Equipo:</label>
+        <select id="equipos"></select>
+
+        <button type="submit">Registrar</button>
+
+    </form>
+</div>
+
+<div id="main-footer"></div>
+
+<button id="btn-lupa" class="lupa-toggle" title="Activar Lupa Óptica 2x">🔍</button>
+
+        <div id="lupa-lente" class="lupa-lente">
+            <div id="lupa-zoom-content" class="lupa-zoom-content"></div>
+        </div>
+
+        <button id="contrast-toggle" class="floating-btn" aria-label="Cambiar contraste">
+            <span class="icon">☀️</span>
+        </button>
+
+<script src="../JavaScript/accesibilidad.js"></script>
+<script src="../JavaScript/Formulario.js"></script>
+<script src="../JavaScript/cargador.js"></script>
+
+</body>
+</html>

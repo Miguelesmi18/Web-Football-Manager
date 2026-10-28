@@ -1,0 +1,626 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3d3f40;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ff5c5c;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+}
+
+nav a:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+.footer {
+    background: linear-gradient(180deg, rgba(29,31,32,0.95), rgba(18,18,18,0.98));
+    padding: 60px 24px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 4px solid #ff5c5c;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    display: block;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+/* Inicio*/
+
+.inicio {
+    position: relative;
+    height: 700px;
+    background: url("https://images.unsplash.com/photo-1679391029864-d46f366a456b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080")
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicio-contenido {
+    position: relative;
+    max-width: 700px;
+}
+
+.inicio h1 {
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section p {
+    color: #ccc;
+}
+
+.caja {
+    background: #1c1c1c;
+    margin: 10px 20px;
+    padding: 15px;
+    width: auto;
+    border-radius: 6px;
+}
+
+/* Plantilla */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff5c5c;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff5c5c;
+}
+
+h3 {
+    text-align: center;
+    color: #ff5c5c;
+    font-size: 17px;
+}
+
+
+.equipo-fondo {
+    border-radius: 10px;
+    padding: 14px;
+    margin: 30px 0 16px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.escudo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.escudo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 2px solid rgba(255,255,255,0.06);
+}
+
+.escudo p {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ff5c5c;
+}
+
+.entrenador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.entrenador img {
+    width: 64px;
+    height: 84px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.06);
+}
+
+.entrenador p {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+.jugadoras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.jugadores {
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    padding: 10px;
+    width: 32%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.jugadores img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.jugadores .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.jugadores p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.jugadores .nombre {
+    font-size: 18px;
+    color: #ff5c5c;
+}
+
+/*  Formulario */
+
+.formulario {
+  background-color: #2b2d2e;
+  width: 400px;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 40px auto;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 12px;
+}
+
+#posiciones {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3d3f40;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: gray;
+}
+
+/*  Clasificacion */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff30;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th {
+    background: #ff5c5c;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.equipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.equipo img {
+    width: 28px;
+    height: 28px;
+}
+
+.pos {
+    color: #E3DDD3;
+    font-weight: bold;
+}
+
+.mejorejg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.jugadora {
+    background: #ffffff30;
+    padding: 20px;
+    border-radius: 15px;
+    width: 270px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.foto-jugadora {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.escudo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+/* Resultados*/
+
+.partido {
+    background: #ffffff30;
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    padding: 15px;
+    margin: 12px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equip {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.resultado {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff5c5c;
+    text-align: center;
+}
+
+.data {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* ===============================================
+   ESTILOS LUPA REAL OPTICA
+   =============================================== */
+
+   /* Botón flotante derecho (minimalista) */
+.lupa-toggle {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000; /* Siempre por encima */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2c3e50; /* Color profesional */
+    color: white;
+    border: 3px solid #ecf0f1;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.lupa-toggle:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lupa-toggle.active {
+    background: #e74c3c; /* Rojo cuando está activa */
+}
+
+/* La Lente: Un círculo simple con borde y fondo blanco */
+.lupa-lente {
+    width: 250px;
+    height: 250px;
+    position: fixed; /* Mantiene la lupa pegada a la pantalla */
+    left: -500px;    /* La saca de la vista inicial (adiós círculo blanco) */
+    top: -500px;
+    border: 4px solid #333;
+    border-radius: 50%;
+    overflow: hidden; 
+    pointer-events: none; 
+    display: none; 
+    z-index: 9999;
+    background: white; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* El contenido que movemos internamente */
+.lupa-zoom-content {
+    position: absolute;
+    transform-origin: 0 0; /* Punto de partida arriba-izquierda */
+    transform: scale(2); /* NIVEL DE ZOOM: Ajusta a 1.5, 3, etc. */
+    will-change: left, top;
+}
+
+/* ===============================================
+   CAMBIAR MODO NOCHE/DIA
+   =============================================== */
+
+/* Estilo del botón flotante */
+.floating-btn {
+    position: fixed;
+    right: 20px;
+    top: 58%;
+    transform: translateY(-50%);
+    z-index: 10000; /* Siempre por encima */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f1c40f; /* Color sol */
+    color: white;
+    border: 3px solid #ecf0f1;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* --- MODO CLARO (Activado por el Sol) --- */
+body.light-mode {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+
+/* Forzamos que secciones, párrafos y títulos sean oscuros sobre el fondo blanco */
+body.light-mode h1, 
+body.light-mode h2, 
+body.light-mode p, 
+body.light-mode section p,
+body.light-mode .caja {
+    color: #1a1a1a !important;
+    background-color: #f4f4f4 !important; /* Gris muy clarito para las cajas */
+}
+
+/* Ajuste para que el encabezado de bienvenida no se pierda */
+body.light-mode .inicio h1 {
+    color: #000 !important;
+    text-shadow: none;
+}
+
+/* El botón cambia a un color más suave en modo claro */
+body.light-mode #contrast-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ===============================================
+   BOTONES GRANDES
+   =============================================== */
+
+/* Contenedor principal que adapta los botones */
+.menu-simplificado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* El botón de gran formato */
+.btn-acceso {
+    flex: 1 1 250px; /* Crece y se adapta, mínimo 250px */
+    min-height: 200px;
+    background-color: #1c1c1c;
+    border: 4px solid #ff5c5c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Icono dentro del botón */
+.icon-grande {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+/* Texto dentro del botón */
+.texto-boton {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* --- EFECTO INTERACTIVO #2 --- */
+.btn-acceso:hover, .btn-acceso:focus {
+    transform: scale(1.1); /* Aumenta un 10% */
+    background-color: #ff5c5c; /* Cambia el fondo al color de marca */
+    outline: none;
+}
+
+.btn-acceso:hover .texto-boton {
+    color: #000; /* El texto cambia a negro para contrastar con el rojo */
+}
+
+/* ===============================================
+   MODO LECTURA
+   =============================================== */
+
+   
+@import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+
+:root {
+    --rm-bg: #fdf6e3; /* Tono sepia suave para fatiga visual */
+    --rm-text: #2c3e50;
+    --rm-width: 750px;
+    --rm-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transición global suave */
+body, body * {
+    transition: background-color 0.5s ease, color 0.5s ease, font-size 0.3s ease;
+}
+
+/* --- CLASE MAESTRA --- */
+body.reading-mode-active {
+    background-color: var(--rm-bg) !important;
+    overflow-x: hidden;
+}
+
+/* Ocultar TODO excepto el contenido principal */
+body.reading-mode-active :is(header, footer, aside, nav, .sidebar, .ads, .comments, iframe, video, .social-bars) {
+    display: none !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Reestructuración del contenedor */
+body.reading-mode-active .reading-container {
+    display: block !important;
+    max-width: var(--rm-width) !important;
+    margin: 0 auto !important;
+    padding: 60px 25px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Tipografía Pro-Accesibilidad */
+body.reading-mode-active p, 
+body.reading-mode-active li {
+    font-family: 'OpenDyslexic', 'Arial', sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.85 !important;
+    color: var(--rm-text) !important;
+    margin-bottom: 1.5em !important;
+}
+
+body.reading-mode-active h1 {
+    font-size: 3rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+/* Eliminar imágenes decorativas pero mantener las de contenido con estilo */
+body.reading-mode-active img {
+    max-width: 100%;
+    height: auto;
+    filter: sepia(0.2);
+    border-radius: 8px;
+    margin: 2rem 0;
+}

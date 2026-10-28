@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Football League</title>
+        <link rel="stylesheet" href="Css/Global.css">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagenes/logo/Logo_de_liga.png" alt="Logo Liga">
+                </a>
+                <div>
+                    <h3>Football Manager Femenino</h3>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Html/plantilla.html">Plantilla</a>
+                <a href="Html/formulario.html">Formulario</a>
+                <a href="Html/resultados.html">Resultados</a>
+                <a href="Html/clasificacion.html">Clasificación</a>
+            </nav>
+        </header>
+
+        <section class="inicio">
+            <div class="inicio-contenido">
+                <h1>
+                    Bienvenid@ al<br>
+                    <span>Football </span>Manager Femenino
+                </h1>
+            </div>
+        </section>
+
+        <main>
+            <section>
+                <h2>Football Manager Femenino</h2>
+                <p>
+                    Esta página web está dedicada al Football Manager femenino,
+                    donde puedes seguir equipos, jugadoras, noticias y próximos partidos.
+                </p>
+            </section>
+
+            <section>
+                <h2>Noticias</h2>
+                <div class="caja">Gran victoria en la jornada femenina</div>
+                <div class="caja">Nueva jugadora destaca esta semana</div>
+                <div class="caja">Equipos preparan los próximos encuentros</div>
+            </section>
+
+            <section>
+                <h2>Próximos Partidos</h2>
+                <div class="caja">Barcelona Femenino vs Madrid Femenino</div>
+                <div class="caja">Sevilla Femenino vs Valencia Femenino</div>
+                <div class="caja">Athletic Femenino vs Atlético Femenino</div>
+            </section>
+
+                <section class="menu-simplificado">
+                    <a href="Html/plantilla.html" class="btn-acceso">
+                        <span class="icon-grande">🧮</span>
+                        <span class="texto-boton">PLANTILLA</span>
+                    </a>
+                    <a href="Html/formulario.html" class="btn-acceso">
+                        <span class="icon-grande">📰</span>
+                        <span class="texto-boton">FORMULARIO</span>
+                    </a>
+                    <a href="Html/resultados.html" class="btn-acceso">
+                        <span class="icon-grande">⚽</span>
+                        <span class="texto-boton">RESULTADOS</span>
+                    </a>
+                    <a href="Html/clasificacion.html" class="btn-acceso">
+                        <span class="icon-grande">🏆</span>
+                        <span class="texto-boton">CLASIFICACIÓN</span>
+                    </a>
+                </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div>
+                    <p>Sigue las ligas y descubre a las futuras estrellas del fútbol.</p>
+                </div>
+                <div>
+                    <h3>Noticias Destacadas</h3>
+                    <a href="#"><p>Nelly brilla con Japón en el Mundial Sub-20</p></a>
+                    <a href="#"><p>Últimas tácticas reveladas por entrenadores top</p></a>
+                    <a href="#"><p>Mercado de fichajes: Los descensos más estelares</p></a>
+                </div>
+                <div>
+                    <h3>Menu de Navegación</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="Html/plantilla.html">Plantilla</a>
+                    <a href="Html/formulario.html">Formulario</a>
+                    <a href="Html/resultados.html">Resultados</a>
+                    <a href="Html/clasificacion.html">Clasificación</a>
+                </div>
+            </div>
+        </footer>
+
+        <button id="btn-lupa" class="lupa-toggle" title="Activar Lupa Óptica 2x">🔍</button>
+
+        <div id="lupa-lente" class="lupa-lente">
+            <div id="lupa-zoom-content" class="lupa-zoom-content"></div>
+        </div>
+
+        <button id="contrast-toggle" class="floating-btn" aria-label="Cambiar contraste">
+            <span class="icon">☀️</span>
+        </button>
+
+        <script src="JavaScript/accesibilidad.js"></script>
+    </body>
+</html>
